@@ -60,7 +60,7 @@ formulario.addEventListener('submit', (e) => {
 
         // Redirección a la página principal después de 3 segundos
         setTimeout(() => {
-            /* location.href = '/03-home.html' */
+            location.href = 'home.html'
         }, 3000);
     } else {
         const alert = createAlert('danger', 'Usuario o contraseña incorrectos!')
