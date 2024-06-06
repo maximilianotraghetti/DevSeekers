@@ -38,35 +38,29 @@
       </div>
     </div>
   </nav>
-  <form>
-    <fieldset>
-      <div class="container mx-auto col-6 mt-5 rounded-2 p-3" style="background-color: #151514; color: aliceblue;">
-      <legend>Iniciar sesión</legend>
-      <div class="row">
+  <div class="container mt-5">
+    <div class="row mb-3">
+      <div class="col-md-7 mx-auto" id="alerts">
+      
       </div>
-      <div>
-        <fieldset>
-          <label class="form-label mt-4" for="readOnlyInput">Nombre de usuario</label>
-          <input class="form-control" id="readOnlyInput" type="text" placeholder="Usuario8129" readonly="">
-        </fieldset>
-      </div>
-      <div>
-        <label for="exampleInputEmail1" class="form-label mt-4">Correo electrónico</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo123@example.com">
-        <small id="emailHelp" class="">No compartiremos tu información con nadie</small>
-      </div>
-      <div>
-        <label for="exampleInputPassword1" class="form-label mt-4">Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña123" autocomplete="off">
-      </div>
-      <div>
-        <label for="exampleInputPassword1" class="form-label mt-4">Confirmar contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="repetir contraseña" autocomplete="off">
+    </div>  
+    <div class="row">
+      <div class="col-md-6 p-3 border rounded mx-auto shadow">
+          <h3 class="p-2 bg-primary text-white text-center rounded shadow mb-4">Iniciar Sesión</h3>
+          <form id="formulario">
+              <input type="text" id="user" name="user" class="form-control mb-3" placeholder="Usuario" required>
+              <input type="password" id="password" name="password" class="form-control mb-3" placeholder="Contraseña" required>
+              <button type="submit" class="btn btn-primary shadow mb-3">Ingresar</button>
+          </form>
       </div>
     </div>
-    </form>
+    <div class="container mx-auto col-sm-6 mt-5">
+      ¿No tienes una cuenta? <button type="button" class="btn btn-link">Haz click aquí</button>
+    </div>
+
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
