@@ -8,3 +8,19 @@
     border-color: #001848;
 
 }
+
+.btn-primary {
+    background-color: rgb(53, 49, 50);
+}
+
+#Centrogar {
+    width: 200px;
+}
+
+#primerEmpleo {
+    width: 125px;
+}
+
+#chat {
+    width: 100px;
+}
