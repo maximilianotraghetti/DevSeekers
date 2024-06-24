@@ -13,10 +13,10 @@ const mostrarUsuarios = async (req, res) => {
 
 const crearUsuario = async (req, res) =>{
 
-  const { usuario, mail, contraseña } = req.body
+  const { nombre_usuario, email, contraseña } = req.body
   const connection = await newConnection()
 
-  const result = await connection.query("INSERT INTO usuarios (usuario, mail, constraseña) VALUES (?, ?, ?)", [usuario, mail, contraseña])
+  const result = await connection.query("INSERT INTO usuarios (nombre_usuario, email, constraseña) VALUES (?, ?, ?)", [nombre_usuario, email, contraseña])
 
 
   res.json(result[0])

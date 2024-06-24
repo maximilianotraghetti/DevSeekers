@@ -3,6 +3,7 @@ const app = express()
 const cors = require("cors")
 const morgan = require("morgan")
 const { userRouter } = require('./src/routes/user.routes')
+
 app.use(cors())
 app.use(morgan("dev"))
 app.use(express.json())

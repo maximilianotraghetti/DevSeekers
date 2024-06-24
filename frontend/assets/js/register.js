@@ -4,13 +4,14 @@ const inputNodes = document.querySelectorAll("form input");
 console.log(inputNodes);
 
 formulario.addEventListener("submit", async (e) => {
+  e.preventDefault()
   
   const user = document.getElementById("user").value;
-  const mail = document.getElementById("mail").value;
+  const email = document.getElementById("mail").value;
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("passwordconfirm").value;
   console.log(user);
-  console.log(mail);
+  console.log(email);
   console.log(password);
   console.log(confirmPassword);
 
@@ -21,7 +22,7 @@ formulario.addEventListener("submit", async (e) => {
 
   const peticion = await fetch("http://localhost:4000/usuarios", {
     method: "POST",
-    body: JSON.stringify({usuario: user, mail, contraseña: password}),
+    body: JSON.stringify({nombre_usuario:user, email, contraseña:password}),
     headers: {
       "Content-type": "application/json"
     }

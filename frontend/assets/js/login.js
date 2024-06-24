@@ -18,7 +18,7 @@ console.log(inputNodes[0])
 
 
 // La siguiente codificación se logra haciendo -> btoa('pingo:anashe')
-const savedUserCredentials = btoa("admin:admin123"); // base64
+const savedUserCredentials = btoa("jorge:jorge123"); // base64
 console.log(savedUserCredentials) 
 function login(payload) {
     if (payload === savedUserCredentials) {
